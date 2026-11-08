@@ -1,6 +1,6 @@
 # FieldDynamics screen mock brief
 
-FieldDynamics is a mobile-first, responsive decision-support web tool for Kaduna agricultural extension advisors and smallholder farmers. While engineered primarily for budget Android smartphones in low-connectivity rural environments (360px viewport, large thumb targets, offline-first caching), all 11 screens feature high-density desktop web variants (1280x800) for extension station laptops, tablets, planning offices, and NASA Space Apps challenge judges.
+FieldDynamics is a mobile-first, responsive decision-support web tool for Kaduna agricultural extension advisors and smallholder farmers. While engineered primarily for budget Android smartphones in low-connectivity rural environments (360px viewport, large thumb targets, offline-first caching), all 12 screens (including the public project landing page) feature high-density desktop web variants (1280x800) for extension station laptops, tablets, planning offices, and NASA Space Apps challenge judges.
 
 The locked screen system, Zaria test sample, and Crop Cards visual identity remain unified across all form factors.
 
@@ -26,10 +26,11 @@ Frost is not shown as a threat.
 
 ## Screens
 
-The locked screen system covers 11 screens representing the complete user journey and PRD specifications:
+The locked screen system covers 12 screens representing the public project portal, complete extension user journey, and PRD specifications:
 
 | Folder | Screen | What is on it |
 | --- | --- | --- |
+| `landing-page` | Public Landing Page | Hero promise, NASA Space Apps 2026 challenge context, live Zaria rotation preview, 4 impact metrics, 3 core system pillars, and Launch Advisor Web Tool CTA |
 | `00-start` | F0. Start | Name, promise, EN/HA switch, Start, “Last saved data” for a returning Zaria visit |
 | `01-farm` | F1. Farm | LGA dropdown on Zaria, soil (with satellite default), water, equipment, past 2 seasons with real crop photos |
 | `02-priorities` | F2. Priorities | 7 priority buttons (2 of 3 chosen cap), where crop is sold |
@@ -75,6 +76,7 @@ High-craft benchmarks scouted for future design iterations:
 FieldDynamics scales seamlessly from mobile to desktop using responsive layouts tailored to extension work:
 
 - **Unified Navigation & Header:** Top app bar with brand identity, step progress tracker (Steps 1–5), offline caching status badge, EN/HA language toggle, and immediate links to the Kaduna Trend Map and Science/Learn modules.
+- **Landing Page (`landing-page/crop-cards-desktop.png`):** Editorial agtech public portal. Left: headline promise, NASA Space Apps 2026 challenge context, impact metrics (23 LGAs, 20+ yrs NASA data, 7 dimensions, 0 bytes farmer data), primary Launch CTA, and Kaduna Trend Map link. Right: live Zaria advisory benchmark card stack comparing baseline maize monoculture against Option A (Maize-Soybean) and Option B (Maize-Cowpea) with real crop photos. Bottom: 3 feature pillars detailing NASA Earth observations, the 7-dimension scoring engine, and multichannel zero-install extension handoff.
 - **F0 Start (`00-start/crop-cards-desktop.png`):** Split hero layout. Left: project narrative, NASA Space Apps 2026 challenge context, and "New Advisory Session" button. Right: "Resume Last Field Session" card pre-filled with Zaria data and offline state indicator.
 - **F1 Farm (`01-farm/crop-cards-desktop.png`):** Two-column input layout. Left: LGA selection, iSDAsoil auto-detected texture, water source, and mechanization level. Right: 2-season crop history selection with large high-contrast crop photography buttons.
 - **F2 Priorities (`02-priorities/crop-cards-desktop.png`):** Multi-column priority grid. Left: 7 selectable agronomic priorities with a strict 3-choice cap. Right: real-time weighting matrix visualization showing how chosen priorities impact model rotation scoring.
@@ -91,6 +93,7 @@ FieldDynamics scales seamlessly from mobile to desktop using responsive layouts 
 
 ### Mobile Phone Views (360x640 @ 2x = 720x1280)
 ```text
+design/screens/landing-page/crop-cards.png
 design/screens/00-start/crop-cards.png
 design/screens/01-farm/crop-cards.png
 design/screens/02-priorities/crop-cards.png
@@ -106,6 +109,7 @@ design/screens/07-trend-map/crop-cards.png
 
 ### Desktop Web Views (1280x800)
 ```text
+design/screens/landing-page/crop-cards-desktop.png
 design/screens/00-start/crop-cards-desktop.png
 design/screens/01-farm/crop-cards-desktop.png
 design/screens/02-priorities/crop-cards-desktop.png

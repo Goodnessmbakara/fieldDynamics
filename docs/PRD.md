@@ -22,11 +22,12 @@ FieldDynamics is a phone-first decision-support tool that helps Kaduna extension
 
 ### What we ship
 A light web tool, opened in a phone browser, that takes a farmer's situation as input (LGA, soil, water, equipment, past crops, priorities, market) and returns:
-1. **A season profile** for that LGA from 20+ years of NASA data: rainy months, usual dry spell, bare-field months, hottest months, and how the season is shifting.
-2. **Three rotation cards:** the farmer's current rotation plus two evidence-backed alternatives, ranked by the farmer's priorities, each scored on the same seven dimensions and carrying a confidence level.
-3. **A detail view per card:** why it was suggested, evidence, benefits, information gaps, and risks to check locally.
-4. **A shareable summary** on channels the farmer already uses (WhatsApp, printed card, Hausa voice note, LGA radio script).
-5. **A Learn screen** that explains the science in plain words.
+1. **A public project landing page** introducing the challenge context, NASA data architecture, 7 agronomic dimensions, and live rotation preview for judges, stakeholders, and advisors.
+2. **A season profile** for that LGA from 20+ years of NASA data: rainy months, usual dry spell, bare-field months, hottest months, and how the season is shifting.
+3. **Three rotation cards:** the farmer's current rotation plus two evidence-backed alternatives, ranked by the farmer's priorities, each scored on the same seven dimensions and carrying a confidence level.
+4. **A detail view per card:** why it was suggested, evidence, benefits, information gaps, and risks to check locally.
+5. **A shareable summary** on channels the farmer already uses (WhatsApp, printed card, Hausa voice note, LGA radio script).
+6. **A Learn screen** that explains the science in plain words.
 
 ### Goals
 
