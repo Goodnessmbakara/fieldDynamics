@@ -1,8 +1,8 @@
 # FieldDynamics screen mock brief
 
-Phone-browser tool for a Kaduna extension advisor. One Android phone per image, portrait 9:16, UI filling a 360-wide screen. Large thumb targets, short text, crop pictures before paragraphs. No map, no install screen, no desktop layout.
+FieldDynamics is a mobile-first, responsive decision-support web tool for Kaduna agricultural extension advisors and smallholder farmers. While engineered primarily for budget Android smartphones in low-connectivity rural environments (360px viewport, large thumb targets, offline-first caching), all 11 screens feature high-density desktop web variants (1280x800) for extension station laptops, tablets, planning offices, and NASA Space Apps challenge judges.
 
-Eight screens. Three guides, three directions each. The screen list, the Zaria sample, and the shared components stay the same. Earlier guides stay in the folders. Guide C borrows interaction ideas from other farm products and does not copy their names, logos, or screens.
+The locked screen system, Zaria test sample, and Crop Cards visual identity remain unified across all form factors.
 
 ## Locked sample
 
@@ -70,8 +70,26 @@ High-craft benchmarks scouted for future design iterations:
 2. **[FarmRise](https://www.lollypop.design/work/farmrise/) (Lollypop Design Studio / Bayer)** — A' Design Award (Interface & UX) and C2A winner. Built specifically for smallholders on budget Android devices. Engineered for direct midday sun and rough hands: oversized thumb targets, custom illustrative crop iconography, and an intuitive card-stream layout that replaces nested menus.
 3. **[Arable](https://www.arable.com/) (Arable Mobile)** — Industrial microclimate elegance and IoT Breakthrough winner. Pairs daily canopy ground-truth photos directly with moisture and temperature charts. Features modular card stacks for water demand and crop stress using an earthy, high-contrast palette with purposeful alert accents.
 
-## Files
+## Responsive Desktop Web Architecture (1280x800)
 
+FieldDynamics scales seamlessly from mobile to desktop using responsive layouts tailored to extension work:
+
+- **Unified Navigation & Header:** Top app bar with brand identity, step progress tracker (Steps 1–5), offline caching status badge, EN/HA language toggle, and immediate links to the Kaduna Trend Map and Science/Learn modules.
+- **F0 Start (`00-start/crop-cards-desktop.png`):** Split hero layout. Left: project narrative, NASA Space Apps 2026 challenge context, and "New Advisory Session" button. Right: "Resume Last Field Session" card pre-filled with Zaria data and offline state indicator.
+- **F1 Farm (`01-farm/crop-cards-desktop.png`):** Two-column input layout. Left: LGA selection, iSDAsoil auto-detected texture, water source, and mechanization level. Right: 2-season crop history selection with large high-contrast crop photography buttons.
+- **F2 Priorities (`02-priorities/crop-cards-desktop.png`):** Multi-column priority grid. Left: 7 selectable agronomic priorities with a strict 3-choice cap. Right: real-time weighting matrix visualization showing how chosen priorities impact model rotation scoring.
+- **F3 Your Season (`03-season/crop-cards-desktop.png`):** Panoramic 12-month dual-encoded seasonal strip (pattern + color) across the top, showing the July dry spell and onset timing. Bottom: 20-year NASA POWER rainfall trend chart and scenario stress-test selector (Normal, Late Start, Extended Dry Spell).
+- **F3d Crop Check (`03a-crop-check/crop-cards-desktop.png`):** FAO-56 dual-axis water balance dashboard. Left: month-by-month ETc crop water demand vs satellite rainfall deficit bar chart with critical pollination vulnerability warning. Right: soil moisture deficit diagnostics and mitigation recommendations.
+- **F4 Compare (`04-compare/crop-cards-desktop.png`):** 3-card side-by-side comparison grid. Current Rotation (Continuous Maize), Option A (Maize-Soybean, Recommended), and Option B (Maize-Cowpea) aligned horizontally across all 7 agronomic scoring dimensions for effortless scanning.
+- **F4a Card Detail (`04a-card-detail/crop-cards-desktop.png`):** Two-column master-detail scientific dossier for Option A. Left: core metrics and crop progression summary. Right: cited agronomic evidence (Franke 2008, Usman 2017 IAR Samaru), quantified benefits, data gaps, and critical local verification risks.
+- **F5 Share (`05-share/crop-cards-desktop.png`):** Omnichannel handoff workstation. Left: output channel actions (WhatsApp farmer dispatch, A5 physical print card generator, Hausa audio voice note player, Alheri FM LGA radio script export). Right: real-time WhatsApp card message preview.
+- **F5a Print Card (`05a-print-card/crop-cards-desktop.png`):** A5 extension print card studio. High-contrast physical handout preview optimized for standard monochrome or color office printers, complete with cut lines, QR code, and local advisor sign-off block.
+- **F6 Learn (`06-learn/crop-cards-desktop.png`):** Documentation portal with sticky category sidebar. Comprehensive explanations of NASA satellite datasets (POWER, GPM, MODIS, SMAP, SRTM), ground-truth calibration, FAO-56 math, and rule engine scoring logic.
+- **F7 Trend Map (`07-trend-map/crop-cards-desktop.png`):** Interactive Kaduna State 23-LGA geospatial choropleth map. Left: SVG map with LGA boundaries color-coded by onset shift and erosion vulnerability. Right: detailed LGA inspector panel displaying 20-year agroclimatic shift statistics for Zaria.
+
+## Screen Mock Assets
+
+### Mobile Phone Views (360x640 @ 2x = 720x1280)
 ```text
 design/screens/00-start/crop-cards.png
 design/screens/01-farm/crop-cards.png
@@ -84,6 +102,21 @@ design/screens/05-share/crop-cards.png
 design/screens/05a-print-card/crop-cards.png
 design/screens/06-learn/crop-cards.png
 design/screens/07-trend-map/crop-cards.png
+```
+
+### Desktop Web Views (1280x800)
+```text
+design/screens/00-start/crop-cards-desktop.png
+design/screens/01-farm/crop-cards-desktop.png
+design/screens/02-priorities/crop-cards-desktop.png
+design/screens/03-season/crop-cards-desktop.png
+design/screens/03a-crop-check/crop-cards-desktop.png
+design/screens/04-compare/crop-cards-desktop.png
+design/screens/04a-card-detail/crop-cards-desktop.png
+design/screens/05-share/crop-cards-desktop.png
+design/screens/05a-print-card/crop-cards-desktop.png
+design/screens/06-learn/crop-cards-desktop.png
+design/screens/07-trend-map/crop-cards-desktop.png
 ```
 
 ## States written here, not drawn
