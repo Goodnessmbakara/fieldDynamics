@@ -2,7 +2,7 @@
 
 Phone-browser tool for a Kaduna extension advisor. One Android phone per image, portrait 9:16, UI filling a 360-wide screen. Large thumb targets, short text, crop pictures before paragraphs. No map, no install screen, no desktop layout.
 
-Eight screens. Two guides, three directions each. The screen list, the Zaria sample, and the shared components stay the same. A guide changes colour, type, texture, and density. The first guide is kept. The second guide does not reuse paper, cloth bands, or a printed form.
+Eight screens. Three guides, three directions each. The screen list, the Zaria sample, and the shared components stay the same. Earlier guides stay in the folders. Guide C borrows interaction ideas from other farm products and does not copy their names, logos, or screens.
 
 ## Locked sample
 
@@ -62,6 +62,21 @@ A different system. No paper grain, no ruled stationery, no stamp marks, no wax-
 - **Chalk wall.** Writing on a dark earth wall. Thick chalk-white letters, millet-gold fill on the selected choice, no chrome and no rules. Crop marks are simple chalk drawings.
 - **Broadcast.** A radio rundown. Black ground, white headlines, one signal-red action, gray cue numbers, hairlines only. No texture and no yellow.
 
+## Guide C — borrowed from farm products
+
+Sources, fetched 8 November 2026:
+
+- [Plantix](https://plantix.net/en/) starts with one action and returns a treatment. [DesignRush](https://www.designrush.com/best-designs/apps/trends/best-agriculture-app-designs) describes that screen as stacked cards, and describes Farm.One as white space where the crop photo supplies the color.
+- The same DesignRush roundup describes Agrilo as neon lime on near-black panels, with a different fill pattern on each soil reading so the meaning is not color alone.
+- [OneSoil Scouting](https://play.google.com/store/apps/details?id=io.onesoil.scouting&hl=en_US) is a field check: see growth, mark a problem, add a note. Reviewers on the [App Store listing](https://apps.apple.com/us/app/onesoil-scouting-farming-tool/id1458134040) say each feature is finished and easy, rather than crowded.
+- [xFarm](https://www.xfarm.ag/en/app) splits climate from fieldwork, and can hand a result to WhatsApp. The season screen stays separate from the comparison, and Share stays a handoff.
+
+Directions:
+
+- **Crop cards.** Off-white. A real crop photo carries the color. One primary button. Results are stacked cards, the way a diagnosis comes back.
+- **Pattern bars.** Near-black panels and one neon-lime action. Water, soil, and the season are bars with a fill pattern plus a word: solid, stripes, or dots.
+- **Scout note.** Pale gray, a white note pinned to a simple greenness legend. No basemap. The note names the field and the last crops. One calm green action.
+
 Avoid a generic SaaS look: no Inter or Roboto, no purple-to-blue gradient, no glass panels, no rounded shadow cards on everything, and no three marketing feature cards.
 
 ## Files
@@ -83,6 +98,14 @@ design/screens/04-compare/{field-meter,chalk-wall,broadcast}.png
 design/screens/04a-card-detail/{field-meter,chalk-wall,broadcast}.png
 design/screens/05-share/{field-meter,chalk-wall,broadcast}.png
 design/screens/06-learn/{field-meter,chalk-wall,broadcast}.png
+design/screens/00-start/{crop-cards,pattern-bars,scout-note}.png
+design/screens/01-farm/{crop-cards,pattern-bars,scout-note}.png
+design/screens/02-priorities/{crop-cards,pattern-bars,scout-note}.png
+design/screens/03-season/{crop-cards,pattern-bars,scout-note}.png
+design/screens/04-compare/{crop-cards,pattern-bars,scout-note}.png
+design/screens/04a-card-detail/{crop-cards,pattern-bars,scout-note}.png
+design/screens/05-share/{crop-cards,pattern-bars,scout-note}.png
+design/screens/06-learn/{crop-cards,pattern-bars,scout-note}.png
 ```
 
 ## States written here, not drawn
