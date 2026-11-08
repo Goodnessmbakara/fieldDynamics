@@ -26,86 +26,64 @@ Frost is not shown as a threat.
 
 ## Screens
 
+The locked screen system covers 11 screens representing the complete user journey and PRD specifications:
+
 | Folder | Screen | What is on it |
 | --- | --- | --- |
-| `00-start` | Start | Name, promise, EN/HA switch, Start, “Last saved data” for a returning Zaria visit |
-| `01-farm` | Farm | LGA dropdown on Zaria, soil, water, equipment, last two seasons as crop icons |
-| `02-priorities` | Priorities | Up to 3 large taps, 2 of 3 selected, market field |
-| `03-season` | Your season | 12-month strip for Zaria: rain, July dry spell, bare months, hottest months, tap-for-meaning |
-| `04-compare` | Compare | Three stacked cards: Current, Option A, Option B |
-| `04a-card-detail` | Card detail | Option A opened: why, evidence, benefits, gaps, risks |
-| `05-share` | Share | WhatsApp, SMS, Print card, Play Hausa sample, Radio script |
-| `06-learn` | Learn | Glossary, satellite vs ground, how a card is chosen, data sources |
+| `00-start` | F0. Start | Name, promise, EN/HA switch, Start, “Last saved data” for a returning Zaria visit |
+| `01-farm` | F1. Farm | LGA dropdown on Zaria, soil (with satellite default), water, equipment, past 2 seasons with real crop photos |
+| `02-priorities` | F2. Priorities | 7 priority buttons (2 of 3 chosen cap), where crop is sold |
+| `03-season` | F3. Your season | 12-month strip for Zaria: rain, July dry spell, bare months, hottest months, NASA POWER trend line, scenario selector |
+| `03a-crop-check` | F3d. Crop check | Maize monthly water demand (ETc) vs rainfall curve, highlighting pollination stage risk during July dry spell |
+| `04-compare` | F4. Compare | Three stacked cards: Current (continuous maize), Option A (maize then soybean), Option B (maize then cowpea) |
+| `04a-card-detail` | F5. Card detail | Option A opened: why, scientific evidence (Franke 2008 & Usman 2017), benefits, gaps, risks to check |
+| `05-share` | F6. Share | Summary card, WhatsApp, Print card, Play Hausa sample, Radio script (SMS removed) |
+| `05a-print-card` | P4. Extension card | Physical 1-page A5 summary card designed to be left with the smallholder |
+| `06-learn` | F7. Learn | Plain glossary, satellite vs ground data (POWER vs GPM), how the tool decides, model comparison |
+| `07-trend-map` | F8. LGA trend map | Interactive map of Kaduna's 23 LGAs colored by onset shift or erosion risk, with Zaria popover |
 
 ## Shared components
 
-- Header with FieldDynamics, step, and EN | HA
-- Primary thumb button and a quiet secondary action
-- Choice chips, crop-icon buttons, priority tiles with a 2-of-3 count
-- Season strip with an icon plus a label, so meaning does not depend on colour alone
-- Rotation card: sequence, priority fit, water, soil, confidence
-- Low-confidence mark on Option B only
-- Share row of five actions
-- Saved-data line on Start only
+- Header with FieldDynamics, step indicator, and EN | HA switch
+- Primary thumb button (min 44px) and quiet secondary actions
+- Choice chips, real crop-photo buttons, 7 priority tiles with a 2-of-3 count
+- Dual-encoded season strip (color + pattern + text label)
+- Rotation cards with confidence badges, opportunity tags, and water demand in mm
+- Share channels tailored to smallholders (WhatsApp, Print, Audio, Radio) without SMS
+- Offline cached-data indicators
 
-## Guide A — kept
+## Design System: Crop Cards
 
-- **Field notebook.** Sun-bleached paper, ink, sorghum red, leaf green. Slab titles, ruled lines, stamp-like crop marks. Practical, not decorative.
-- **Signal cloth.** Market-banner contrast: laterite orange, maize yellow, cowpea cream, cloth black, soybean green. Heavy short labels, full-width bands, icons large enough to read outdoors.
-- **Extension card.** The printed card left with a farmer. Clay white, charcoal, a single blue-green, thin rules. Quiet form layout that still works in black and white.
+The team evaluated 9 initial design directions across Guides A, B, and C. The **Crop Cards** system was selected as the unified direction and upgraded with principles borrowed from high-craft agtech benchmarks:
 
-## Guide B — instruments
-
-A different system. No paper grain, no ruled stationery, no stamp marks, no wax-print bands, no clay-white form, no fingerprint button.
-
-- **Field meter.** A rugged handheld. Matte charcoal ground, amber figures, pale gray words, one olive light for the selected choice. Small-caps labels, large amber action. Looks like equipment.
-- **Chalk wall.** Writing on a dark earth wall. Thick chalk-white letters, millet-gold fill on the selected choice, no chrome and no rules. Crop marks are simple chalk drawings.
-- **Broadcast.** A radio rundown. Black ground, white headlines, one signal-red action, gray cue numbers, hairlines only. No texture and no yellow.
-
-## Guide C — borrowed from farm products
-
-Sources, fetched 8 November 2026:
-
-- [Plantix](https://plantix.net/en/) starts with one action and returns a treatment. [DesignRush](https://www.designrush.com/best-designs/apps/trends/best-agriculture-app-designs) describes that screen as stacked cards, and describes Farm.One as white space where the crop photo supplies the color.
-- The same DesignRush roundup describes Agrilo as neon lime on near-black panels, with a different fill pattern on each soil reading so the meaning is not color alone.
-- [OneSoil Scouting](https://play.google.com/store/apps/details?id=io.onesoil.scouting&hl=en_US) is a field check: see growth, mark a problem, add a note. Reviewers on the [App Store listing](https://apps.apple.com/us/app/onesoil-scouting-farming-tool/id1458134040) say each feature is finished and easy, rather than crowded.
-- [xFarm](https://www.xfarm.ag/en/app) splits climate from fieldwork, and can hand a result to WhatsApp. The season screen stays separate from the comparison, and Share stays a handoff.
-
-Directions:
-
-- **Crop cards.** Off-white. A real crop photo carries the color. One primary button. Results are stacked cards, the way a diagnosis comes back.
-- **Pattern bars.** Near-black panels and one neon-lime action. Water, soil, and the season are bars with a fill pattern plus a word: solid, stripes, or dots.
-- **Scout note.** Pale gray, a white note pinned to a simple greenness legend. No basemap. The note names the field and the last crops. One calm green action.
+- **From Klim (Justified Studio):** Confident typography, warm off-white canvas (`#FAF8F5`), clean card borders (`#E2DED5`), and digestible multi-season rotation summaries that eliminate bureaucratic fatigue.
+- **From FarmRise (Lollypop / Bayer):** High-contrast outdoor legibility under direct sunlight, oversized thumb targets, custom illustrative crop iconography, and an intuitive card stream.
+- **From Arable:** Tactical data indicators, modular card stacks, and explicit units on every reading (mm, °C).
 
 Avoid a generic SaaS look: no Inter or Roboto, no purple-to-blue gradient, no glass panels, no rounded shadow cards on everything, and no three marketing feature cards.
+
+## Future design inspiration & benchmarks
+
+High-craft benchmarks scouted for future design iterations:
+
+1. **[Klim](https://klim.eco/) (Justified Studio)** — Modern regenerative agriculture companion. Bold typography and editorial card layouts. Its "Crop Mix Composer" turns multi-season crop rotation planning and soil impact into clean, consumer-grade mobile cards without administrative fatigue.
+2. **[FarmRise](https://www.lollypop.design/work/farmrise/) (Lollypop Design Studio / Bayer)** — A' Design Award (Interface & UX) and C2A winner. Built specifically for smallholders on budget Android devices. Engineered for direct midday sun and rough hands: oversized thumb targets, custom illustrative crop iconography, and an intuitive card-stream layout that replaces nested menus.
+3. **[Arable](https://www.arable.com/) (Arable Mobile)** — Industrial microclimate elegance and IoT Breakthrough winner. Pairs daily canopy ground-truth photos directly with moisture and temperature charts. Features modular card stacks for water demand and crop stress using an earthy, high-contrast palette with purposeful alert accents.
 
 ## Files
 
 ```text
-design/screens/00-start/{field-notebook,signal-cloth,extension-card}.png
-design/screens/01-farm/{field-notebook,signal-cloth,extension-card}.png
-design/screens/02-priorities/{field-notebook,signal-cloth,extension-card}.png
-design/screens/03-season/{field-notebook,signal-cloth,extension-card}.png
-design/screens/04-compare/{field-notebook,signal-cloth,extension-card}.png
-design/screens/04a-card-detail/{field-notebook,signal-cloth,extension-card}.png
-design/screens/05-share/{field-notebook,signal-cloth,extension-card}.png
-design/screens/06-learn/{field-notebook,signal-cloth,extension-card}.png
-design/screens/00-start/{field-meter,chalk-wall,broadcast}.png
-design/screens/01-farm/{field-meter,chalk-wall,broadcast}.png
-design/screens/02-priorities/{field-meter,chalk-wall,broadcast}.png
-design/screens/03-season/{field-meter,chalk-wall,broadcast}.png
-design/screens/04-compare/{field-meter,chalk-wall,broadcast}.png
-design/screens/04a-card-detail/{field-meter,chalk-wall,broadcast}.png
-design/screens/05-share/{field-meter,chalk-wall,broadcast}.png
-design/screens/06-learn/{field-meter,chalk-wall,broadcast}.png
-design/screens/00-start/{crop-cards,pattern-bars,scout-note}.png
-design/screens/01-farm/{crop-cards,pattern-bars,scout-note}.png
-design/screens/02-priorities/{crop-cards,pattern-bars,scout-note}.png
-design/screens/03-season/{crop-cards,pattern-bars,scout-note}.png
-design/screens/04-compare/{crop-cards,pattern-bars,scout-note}.png
-design/screens/04a-card-detail/{crop-cards,pattern-bars,scout-note}.png
-design/screens/05-share/{crop-cards,pattern-bars,scout-note}.png
-design/screens/06-learn/{crop-cards,pattern-bars,scout-note}.png
+design/screens/00-start/crop-cards.png
+design/screens/01-farm/crop-cards.png
+design/screens/02-priorities/crop-cards.png
+design/screens/03-season/crop-cards.png
+design/screens/03a-crop-check/crop-cards.png
+design/screens/04-compare/crop-cards.png
+design/screens/04a-card-detail/crop-cards.png
+design/screens/05-share/crop-cards.png
+design/screens/05a-print-card/crop-cards.png
+design/screens/06-learn/crop-cards.png
+design/screens/07-trend-map/crop-cards.png
 ```
 
 ## States written here, not drawn
