@@ -2,7 +2,7 @@
 
 Phone-browser tool for a Kaduna extension advisor. One Android phone per image, portrait 9:16, UI filling a 360-wide screen. Large thumb targets, short text, crop pictures before paragraphs. No map, no install screen, no desktop layout.
 
-Eight screens, three visual directions. Layout, content, and components stay the same. Only colour, type, texture, and density change.
+Eight screens. Two guides, three directions each. The screen list, the Zaria sample, and the shared components stay the same. A guide changes colour, type, texture, and density. The first guide is kept. The second guide does not reuse paper, cloth bands, or a printed form.
 
 ## Locked sample
 
@@ -48,11 +48,19 @@ Frost is not shown as a threat.
 - Share row of five actions
 - Saved-data line on Start only
 
-## Directions
+## Guide A — kept
 
 - **Field notebook.** Sun-bleached paper, ink, sorghum red, leaf green. Slab titles, ruled lines, stamp-like crop marks. Practical, not decorative.
 - **Signal cloth.** Market-banner contrast: laterite orange, maize yellow, cowpea cream, cloth black, soybean green. Heavy short labels, full-width bands, icons large enough to read outdoors.
 - **Extension card.** The printed card left with a farmer. Clay white, charcoal, a single blue-green, thin rules. Quiet form layout that still works in black and white.
+
+## Guide B — instruments
+
+A different system. No paper grain, no ruled stationery, no stamp marks, no wax-print bands, no clay-white form, no fingerprint button.
+
+- **Field meter.** A rugged handheld. Matte charcoal ground, amber figures, pale gray words, one olive light for the selected choice. Small-caps labels, large amber action. Looks like equipment.
+- **Chalk wall.** Writing on a dark earth wall. Thick chalk-white letters, millet-gold fill on the selected choice, no chrome and no rules. Crop marks are simple chalk drawings.
+- **Broadcast.** A radio rundown. Black ground, white headlines, one signal-red action, gray cue numbers, hairlines only. No texture and no yellow.
 
 Avoid a generic SaaS look: no Inter or Roboto, no purple-to-blue gradient, no glass panels, no rounded shadow cards on everything, and no three marketing feature cards.
 
@@ -67,6 +75,14 @@ design/screens/04-compare/{field-notebook,signal-cloth,extension-card}.png
 design/screens/04a-card-detail/{field-notebook,signal-cloth,extension-card}.png
 design/screens/05-share/{field-notebook,signal-cloth,extension-card}.png
 design/screens/06-learn/{field-notebook,signal-cloth,extension-card}.png
+design/screens/00-start/{field-meter,chalk-wall,broadcast}.png
+design/screens/01-farm/{field-meter,chalk-wall,broadcast}.png
+design/screens/02-priorities/{field-meter,chalk-wall,broadcast}.png
+design/screens/03-season/{field-meter,chalk-wall,broadcast}.png
+design/screens/04-compare/{field-meter,chalk-wall,broadcast}.png
+design/screens/04a-card-detail/{field-meter,chalk-wall,broadcast}.png
+design/screens/05-share/{field-meter,chalk-wall,broadcast}.png
+design/screens/06-learn/{field-meter,chalk-wall,broadcast}.png
 ```
 
 ## States written here, not drawn
