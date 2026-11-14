@@ -37,9 +37,11 @@ The locked screen system covers 15 screens representing the public project porta
 | `03-season` | F3. Your season | 12-month strip for Zaria: rain, July dry spell, bare months, hottest months, NASA POWER trend line, scenario selector |
 | `03a-crop-check` | F3d. Crop check | Maize monthly water demand (ETc) vs rainfall curve, highlighting pollination stage risk during July dry spell |
 | `03b-patterns` | F3e. Pattern panel | All 9 NASA statement patterns (temperature, heat stress, onset, soil moisture, ET0, frost, extreme rain, NDVI stress, water trend) |
+| `03c-term-explainer` | F3f. Tap-for-meaning | Bottom sheet (phone) / modal (desktop) explaining a tapped term in plain words: definition, NASA source + resolution, current LGA value, and why it matters for the farm. Example: "Soil Moisture Anomaly" (R23). |
 | `04-compare` | F4. Compare | Three stacked cards: Current (continuous maize), Option A (maize then soybean), Option B (maize then cowpea) |
 | `04a-card-detail` | F5. Card detail | Option A opened: why, scientific evidence (Franke 2008 & Usman 2017), benefits, gaps, risks to check |
 | `04b-decide` | F6. Decide | Three selectable rotation plan cards (pre-selected on the card the advisor just viewed), deferral path "Not sure yet — save and come back", and "Proceed to Share" CTA. The farmer chooses; the tool does not. |
+| `04c-low-confidence` | F5b. Card detail (low confidence) | Same as F5 but for Option B (Medium Confidence). The amber "Check with your extension officer" block appears first, before evidence sections, explaining why confidence is lower (R22). |
 | `05-share` | F7. Share | Summary card, WhatsApp, Print card, Play Hausa sample, Radio script (SMS removed) |
 | `05a-print-card` | P4. Extension card | Physical 1-page A5 summary card designed to be left with the smallholder |
 | `05b-radio-script` | P7. Radio studio | 60-second broadcast read for Alheri FM Kaduna (98.7) with authentic Hausa teleprompter and timing cues |
