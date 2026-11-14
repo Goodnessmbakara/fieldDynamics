@@ -39,7 +39,8 @@ The locked screen system covers 15 screens representing the public project porta
 | `03b-patterns` | F3e. Pattern panel | All 9 NASA statement patterns (temperature, heat stress, onset, soil moisture, ET0, frost, extreme rain, NDVI stress, water trend) |
 | `04-compare` | F4. Compare | Three stacked cards: Current (continuous maize), Option A (maize then soybean), Option B (maize then cowpea) |
 | `04a-card-detail` | F5. Card detail | Option A opened: why, scientific evidence (Franke 2008 & Usman 2017), benefits, gaps, risks to check |
-| `05-share` | F6. Share | Summary card, WhatsApp, Print card, Play Hausa sample, Radio script (SMS removed) |
+| `04b-decide` | F6. Decide | Three selectable rotation plan cards (pre-selected on the card the advisor just viewed), deferral path "Not sure yet — save and come back", and "Proceed to Share" CTA. The farmer chooses; the tool does not. |
+| `05-share` | F7. Share | Summary card, WhatsApp, Print card, Play Hausa sample, Radio script (SMS removed) |
 | `05a-print-card` | P4. Extension card | Physical 1-page A5 summary card designed to be left with the smallholder |
 | `05b-radio-script` | P7. Radio studio | 60-second broadcast read for Alheri FM Kaduna (98.7) with authentic Hausa teleprompter and timing cues |
 | `06-learn` | F7. Learn | Plain glossary, satellite vs ground data (POWER vs GPM), how the tool decides, model comparison |
@@ -108,6 +109,7 @@ design/screens/03a-crop-check/crop-cards.png
 design/screens/03b-patterns/crop-cards.png
 design/screens/04-compare/crop-cards.png
 design/screens/04a-card-detail/crop-cards.png
+design/screens/04b-decide/crop-cards.png
 design/screens/05-share/crop-cards.png
 design/screens/05a-print-card/crop-cards.png
 design/screens/05b-radio-script/crop-cards.png
@@ -127,6 +129,7 @@ design/screens/03a-crop-check/crop-cards-desktop.png
 design/screens/03b-patterns/crop-cards-desktop.png
 design/screens/04-compare/crop-cards-desktop.png
 design/screens/04a-card-detail/crop-cards-desktop.png
+design/screens/04b-decide/crop-cards-desktop.png
 design/screens/05-share/crop-cards-desktop.png
 design/screens/05a-print-card/crop-cards-desktop.png
 design/screens/05b-radio-script/crop-cards-desktop.png
